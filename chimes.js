@@ -1,9 +1,23 @@
-//360000 milliseconds in a hour
-//900000 milliseconds in 15 mins.
-// create an HTTP object, for responding to requests
-// var http = require('http');
+// Do all initialization inside of the document.ready
+$(document).ready(function () {
+    // Take the work we did in textbox "#important" from last time and save it in there 
+    $("#important").val(localStorage.getItem("isAwesome"));
+    // The click handler for the saving button
+    $('#onbutt').click(function () {
+        // Tell it what to save...
+        localStorage.setItem("isAwesome", $("#important").val());
+        //...and print it
+        console.log(localStorage.getItem("isAwesome"));
+    });
+    // Set the audio variable
+    var audio = $("#audio")[0];
+    // The click handler for the audio button
+    $('#one').click(function () {
+        // Tell it to play "audio"
+        audio.play();
+    });
 
-// // create the objects we'll need for doing our improved file routing
-// var fs = require('fs');
-// var parse = require('url').parse;
-// var join = require('path').join;
+});
+function robot() {
+    alert('*bzzzzzzzzzzzzzz* WORKS *bzz*');
+}

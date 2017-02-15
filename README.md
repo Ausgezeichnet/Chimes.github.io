@@ -1,1 +1,1 @@
-# Chimes.github.io
+# Chimes, Your Time-Telling App

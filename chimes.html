@@ -1,19 +1,32 @@
 <html>
 
 <head>
-    <script src="js/chimes.js"></script>
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="chimes.js"></script>
     <link rel="stylesheet" href="chimes.css" />
     <style>
         body {
-            background-color: #ff9400;
+            background-color: darkorchid;
         }
     </style>
 </head>
 
 <body>
+    <audio id="audio">
+        <source src="fwapfwap.ogg"></source>
+    </audio>
     <div class="headclass">
         Chimes
     </div>
+    <button id="one">Press me for a sound!</button>
+    <input type="text" />
+     <textarea id="important" rows="5">Mwa
+         ha
+         ha
+         ha! ' - '
+            |_____|          
+  </textarea>
+  <button id="onbutt" class="buttonica">Save your work!</button>
+  <button onclick="setTimeout(robot, 3000);" id="noid" class="buttonica">TEST *bzzzzzzzzzzz* *bzzzzzz*</button>
 </body>
-
 </html>
