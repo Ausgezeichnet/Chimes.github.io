@@ -16,8 +16,22 @@ $(document).ready(function () {
         // Tell it to play "audio"
         audio.play();
     });
-
+    $('#noid').click(function () {
+        setTimeout(robot, 3000);
+    });
+     $('#btn1').click(function () {
+        clearInterval(varrie);
+    });
+     $('#btn2').click(function () {
+        varrie = setInterval(cappycot, 1000);
+    });
 });
 function robot() {
     alert('*bzzzzzzzzzzzzzz* WORKS *bzz*');
+}
+var varrie = setInterval(cappycot, 1000);
+
+function cappycot() {
+    var kpq = new Date();
+    document.getElementById("sbfc").innerHTML = kpq.toLocaleTimeString();
 }
