@@ -4,10 +4,14 @@
     width: 100%;
     text-align: center;
     border: solid 1px black;
+    font-size: 50pt;
 }
 .btn-class {
     border: solid 1px indianred;
 }
 .clocksign{
-    	font-family:"Lobster";
+    	font-family:"Indie Flower";
+        border: solid 1px midnightblue;
+        width: 300px;
+        font-size: 20pt
     }
