@@ -1,0 +1,13 @@
+.headclass {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: center;
+    border: solid 1px black;
+}
+.btn-class {
+    border: solid 1px indianred;
+}
+.clocksign{
+    	font-family:"Lobster";
+    }
