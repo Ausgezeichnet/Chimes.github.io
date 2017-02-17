@@ -15,3 +15,11 @@
         width: 300px;
         font-size: 20pt
     }
+.selectclass{
+    font-family:"Calligraffitti";
+    border: solid 1px crimson;
+    width: 70px;
+}
+.clockstyle{
+    	font-family:"Lato";
+}
