@@ -7,10 +7,24 @@ function timeFunc() {
     // Print the time onto the screen
     document.getElementById("time-p").innerHTML = date.toLocaleTimeString();
 }
-// Step 1: Figure out how to add an option to a select using JQuery
-// Step 2: Use a for loop to make the start and stop selects
 $(document).ready(function () {
-    for (var i = 1; i < 13; i ++){
-        $("#starttime").append( '<option value="'+i+'">'+i+':00 AM</option>' );
+    $("#starttime").change(function () {
+        console.log($("#starttime").val());
+        console.log($("#endtime").val());
+        if ($("#starttime").val() < $("endtime").val() ){
+            $(window).alert("error");
+        }
+    });
+    var ampm = ["AM", "PM"];
+    var mins = ["00", "15", "30", "45"];
+    var hours = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+    for (var k = 0; k < 2; k++) {    
+            for (var i = 0; i < 12; i++) {
+            for (var j = 0; j < 4; j++) {
+                var timeToShow = hours[i] + ':' + mins[j] + " " + ampm[k];
+                $("#starttime").append('<option value="' + timeToShow + '">' + timeToShow + '</option>');
+                $("#endtime").append('<option value="' + timeToShow + '">' + timeToShow + '</option>');
+            }
+        }
     }
 });
