@@ -9,10 +9,9 @@ function timeFunc() {
 }
 $(document).ready(function () {
     $("#starttime").change(function () {
-        console.log($("#starttime").val());
-        console.log($("#endtime").val());
-        if ($("#starttime").val() < $("endtime").val() ){
-            $(window).alert("error");
+        if ($("#starttime").val() > $("#endtime").val() ){
+            window.alert("error");
+            $("#endtime").val($("#starttime").val());
         }
     });
     var ampm = ["AM", "PM"];
